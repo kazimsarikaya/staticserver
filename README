@@ -1,0 +1,26 @@
+A static web server
+Has a configuration file which should be named as staticserver.conf
+For configuration the system should be:
+
+staticserver.<id>.virtualhost
+staticserver.<id>.documentroot
+staticserver.<id>.wellcome
+
+id is an integer starting from 0. it should be continues.
+virtualhost is the domain like www.example.com
+documentroot is the folder of files reside.
+wellcome is the enterance page
+
+The jar should be deployed at osgi container bundle dir. It requires nanohttpd
+bundle.
+
+The maven repository is:
+
+<repository>
+        <id>sanaldiyar-snapshot</id>
+        <name>Sanal Diyar Snapshot</name>
+        <url>http://maven2.sanaldiyar.com/snap-repo/</url>
+</repository>
+
+Kazım SARIKAYA
+kazimsarikaya@sanaldiyar.com
