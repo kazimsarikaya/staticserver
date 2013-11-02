@@ -14,11 +14,18 @@ import org.osgi.framework.BundleActivator;
 import org.osgi.framework.BundleContext;
 
 /**
+ * Static Web Server Activator Bundle
  *
  * @author kazim
  */
 public class Activator implements BundleActivator {
 
+    /**
+     * Loads configuration file and parses virtual hosts of static files and
+     * registers them into the osgi.
+     * @param context
+     * @throws Exception 
+     */
     @Override
     public void start(BundleContext context) throws Exception {
         Properties conf = new Properties();

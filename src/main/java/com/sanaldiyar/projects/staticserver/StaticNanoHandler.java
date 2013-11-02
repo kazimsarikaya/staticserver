@@ -17,6 +17,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 /**
+ * A static web server handler. Handles static files to serve.
  *
  * @author kazim
  */
@@ -24,14 +25,28 @@ public class StaticNanoHandler implements NanoHandler {
 
     private final static Logger logger = LoggerFactory.getLogger(StaticNanoHandler.class);
 
-    private String wellcome;
-    private String documentRoot;
+    private final String wellcome;
+    private final String documentRoot;
 
+    /**
+     * Handler contructor
+     *
+     * @param wellcome index page
+     * @param documentRoot the folder path of site
+     */
     public StaticNanoHandler(String wellcome, String documentRoot) {
         this.wellcome = wellcome;
         this.documentRoot = documentRoot;
     }
 
+    /**
+     * Handles requests. The requested path is appended to the document root.
+     * The content type is determined by the extension of the requested path.
+     * Request data omitted. Response is constructed by only file contents.
+     *
+     * @param request
+     * @param response
+     */
     @Override
     public void handle(Request request, Response response) {
         try {
