@@ -1,0 +1,52 @@
+Sanal Diyar Software License
+Version 0.1, 26 November 2013
+
+Copyright © 2013 Kazım SARIKAYA http://license.sanaldiyar.com
+
+Everyone is permitted to copy and distribute verbatim copies of this license document, but changing it is not allowed.
+
+Preamble
+
+The Sanal Diyar Software License is a license for managing open source commercial applications.
+
+TERMS AND CONDITIONS
+
+0. Definitions.
+
+1. Source Code.
+Source code means every thing you get about the software. They may not be real software code. 
+
+2. Distribution.
+Any one can distribute the source code without modifications or requesting any fee and cannot sublicense the original source code.
+
+Other distribution types are defined in section 4 and 5. 
+
+3. Derivative Works.
+Source Code can be modified for needs. However modified source code can not be distributed as original work. It can be part of a open source software as described section 4 or commercial software as described section 5.
+
+If modifications are about an issue/bug inside the software or feature the original source code owners should be notified.
+
+4. Open Source Use.
+You can use source code or program inside an open source software with adding contributors names and license notice inside the source codes which are used by new software. 
+
+5. Commercial Use.
+You cannot use source or program in commercial applications or sell part of a commercial applications without payment to the contributors. 
+
+The fees for commercial usage is defined by the contributors of the source code.
+
+The payment for usage cannot grant deleting contributor names and license notice from the source files or artifact.
+
+6. Warranty.
+There is no warranty for the software if there is an error or data lose.
+
+Applying License
+
+Add a copy of this file named as LICENSE or LICENSE.txt inside your root directory of source code.
+
+Insert the following paragraph at the beginning of each file
+
+<one line to give the program’s name>
+Copryright © <year> <comma separated list of contributors>
+
+This program is licensed under the terms of Sanal Diyar Software License. Please
+read the license file or visit http://license.sanaldiyar.com
