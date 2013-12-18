@@ -5,9 +5,9 @@ Copryright © 2013 Kazım SARIKAYA
 This program is licensed under the terms of Sanal Diyar Software License. Please
 read the license file or visit http://license.sanaldiyar.com
  */
-package com.sanaldiyar.projects.staticserver;
+package com.sanaldiyar.projects.nanohttpd.staticserver;
 
-import com.sanaldiyar.projects.nanohttpd.NanoHandler;
+import com.sanaldiyar.projects.nanohttpd.nanohttpd.NanoHandler;
 import java.io.FileInputStream;
 import java.util.Dictionary;
 import java.util.Hashtable;
@@ -25,8 +25,8 @@ public class Activator implements BundleActivator {
     /**
      * Loads configuration file and parses virtual hosts of static files and
      * registers them into the osgi.
-     * @param context
-     * @throws Exception 
+     * @param context the osgi context
+     * @throws Exception general exception. especially not found staticserver.conf
      */
     @Override
     public void start(BundleContext context) throws Exception {

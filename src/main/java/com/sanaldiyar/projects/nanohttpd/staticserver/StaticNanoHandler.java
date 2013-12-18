@@ -5,12 +5,12 @@ Copryright © 2013 Kazım SARIKAYA
 This program is licensed under the terms of Sanal Diyar Software License. Please
 read the license file or visit http://license.sanaldiyar.com
  */
-package com.sanaldiyar.projects.staticserver;
+package com.sanaldiyar.projects.nanohttpd.staticserver;
 
-import com.sanaldiyar.projects.nanohttpd.NanoHandler;
-import com.sanaldiyar.projects.nanohttpd.Request;
-import com.sanaldiyar.projects.nanohttpd.Response;
-import com.sanaldiyar.projects.nanohttpd.StatusCode;
+import com.sanaldiyar.projects.nanohttpd.nanohttpd.NanoHandler;
+import com.sanaldiyar.projects.nanohttpd.nanohttpd.Request;
+import com.sanaldiyar.projects.nanohttpd.nanohttpd.Response;
+import com.sanaldiyar.projects.nanohttpd.nanohttpd.StatusCode;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.InputStream;
@@ -46,8 +46,8 @@ public class StaticNanoHandler implements NanoHandler {
      * The content type is determined by the extension of the requested path.
      * Request data omitted. Response is constructed by only file contents.
      *
-     * @param request
-     * @param response
+     * @param request the nano request
+     * @param response the nano reponse
      */
     @Override
     public void handle(Request request, Response response) {
